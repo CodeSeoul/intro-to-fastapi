@@ -1,0 +1,19 @@
+[project]
+name = "codeseoul-intro-to-fastapi"
+description = "An introductory project to FastAPI"
+version = "0.1.0"
+authors = [
+    {name = "Bryan \"Beege\" Berry", email = "beege@codeseoul.org"}
+]
+dependencies = [
+    "fastapi[all] ~=0.101.0",
+    "uvicorn[standard] ~= 0.23.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit"
+]
+
+[project.scripts]
+app = "app.main:main"
